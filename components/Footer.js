@@ -25,11 +25,16 @@ export default function Footer({ props }) {
   return (
     <>
       <Box>
-        <Grid justifyContent="center" container spacing={2}>
+        <Grid justifyContent="center" container spacing={1}>
           <Grid xs={6} md={6}>
-            <Card sx={{ backgroundColor: "#Cfffca" }}>
+            <Card sx={{ backgroundColor: "#9dc53f", borderRadius: "16px" }}>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  color="inherit"
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
                   Fayetteville
                 </Typography>
                 <Stack justifyContent="center" direction="row" spacing={2}>
@@ -53,6 +58,7 @@ export default function Footer({ props }) {
               <Grid justifyContent="center" container>
                 <CardActions>
                   <Button
+                    sx={{ color: "#000000" }}
                     size="small"
                     to="#"
                     onClick={(e) => {
@@ -63,6 +69,7 @@ export default function Footer({ props }) {
                     Call
                   </Button>
                   <Button
+                    sx={{ color: "#000000" }}
                     size="small"
                     to="#"
                     onClick={(e) => {
@@ -72,17 +79,9 @@ export default function Footer({ props }) {
                   >
                     Email
                   </Button>
+
                   <Button
-                    size="small"
-                    to="#"
-                    onClick={(e) => {
-                      window.location.href = "fax:404.994.7728";
-                      e.preventDefault();
-                    }}
-                  >
-                    Fax
-                  </Button>
-                  <Button
+                    sx={{ color: "#000000" }}
                     size="small"
                     to="#"
                     onClick={(e) => {
@@ -98,7 +97,7 @@ export default function Footer({ props }) {
             </Card>
           </Grid>
           <Grid xs={6} md={6}>
-            <Card sx={{ backgroundColor: "#Cfffca" }}>
+            <Card sx={{ backgroundColor: "#9dc53f", borderRadius: "16px" }}>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Riverdale
@@ -124,6 +123,7 @@ export default function Footer({ props }) {
               <Grid justifyContent="center" container>
                 <CardActions>
                   <Button
+                    sx={{ color: "#000000" }}
                     size="small"
                     to="#"
                     onClick={(e) => {
@@ -134,6 +134,7 @@ export default function Footer({ props }) {
                     Call
                   </Button>
                   <Button
+                    sx={{ color: "#000000" }}
                     size="small"
                     to="#"
                     onClick={(e) => {
@@ -143,17 +144,9 @@ export default function Footer({ props }) {
                   >
                     Email
                   </Button>
+
                   <Button
-                    size="small"
-                    to="#"
-                    onClick={(e) => {
-                      window.location.href = "fax:678.626.1844";
-                      e.preventDefault();
-                    }}
-                  >
-                    Fax
-                  </Button>
-                  <Button
+                    sx={{ color: "#000000" }}
                     size="small"
                     to="#"
                     onClick={(e) => {
@@ -169,40 +162,38 @@ export default function Footer({ props }) {
             </Card>
           </Grid>
         </Grid>
-        <Paper elevation={2}>
-          <Grid xs={12} md={12}>
-            <Stack justifyContent="center" direction="row" spacing={2}>
-              <IconButton
-                size="large"
-                color="inherit"
-                href="https://www.facebook.com/Idealtherapy/"
-              >
-                <FacebookRoundedIcon sx={{ fontSize: 40 }} />
-              </IconButton>
-              <IconButton
-                size="large"
-                color="inherit"
-                href="https://twitter.com/idealtherapy"
-              >
-                <TwitterIcon sx={{ fontSize: 40 }} />
-              </IconButton>
-              <IconButton
-                size="large"
-                color="inherit"
-                href="https://www.yelp.com/biz/ideal-therapy-fayetteville"
-              >
-                <LinkIcon sx={{ fontSize: 40 }} />
-              </IconButton>
-              <IconButton
-                size="large"
-                color="inherit"
-                href="https://www.google.com/search?q=%E2%80%8BIdeal+Therapy%2C+LLC+290+Hwy+314%2C+Suite+B+Fayetteville%2C+GA+30214&rlz=1C1CHBF_enIN850IN850&oq=%E2%80%8BIdeal+Therapy%2C+LLC+290+Hwy+314%2C+Suite+B+Fayetteville%2C+GA+30214&aqs=chrome..69i57j69i61l2j69i60.287j0j7&sourceid=chrome&ie=UTF-8#lrd=0x88f4efe8eb6d0093:0x58dd76c3a1781cce,1,,,"
-              >
-                <GoogleIcon sx={{ fontSize: 40 }} />
-              </IconButton>
-            </Stack>
-          </Grid>
-        </Paper>
+        <Grid xs={12} md={12}>
+          <Stack justifyContent="center" direction="row" spacing={2}>
+            <IconButton
+              size="large"
+              color="inherit"
+              href="https://www.facebook.com/Idealtherapy/"
+            >
+              <FacebookRoundedIcon sx={{ fontSize: 40, color: "#1bb2b0" }} />
+            </IconButton>
+            <IconButton
+              size="large"
+              color="inherit"
+              href="https://twitter.com/idealtherapy"
+            >
+              <TwitterIcon sx={{ fontSize: 40, color: "#1bb2b0" }} />
+            </IconButton>
+            <IconButton
+              size="large"
+              color="inherit"
+              href="https://www.yelp.com/biz/ideal-therapy-fayetteville"
+            >
+              <LinkIcon sx={{ fontSize: 40, color: "#1bb2b0" }} />
+            </IconButton>
+            <IconButton
+              size="large"
+              color="inherit"
+              href="https://www.google.com/search?q=%E2%80%8BIdeal+Therapy%2C+LLC+290+Hwy+314%2C+Suite+B+Fayetteville%2C+GA+30214&rlz=1C1CHBF_enIN850IN850&oq=%E2%80%8BIdeal+Therapy%2C+LLC+290+Hwy+314%2C+Suite+B+Fayetteville%2C+GA+30214&aqs=chrome..69i57j69i61l2j69i60.287j0j7&sourceid=chrome&ie=UTF-8#lrd=0x88f4efe8eb6d0093:0x58dd76c3a1781cce,1,,,"
+            >
+              <GoogleIcon sx={{ fontSize: 40, color: "#1bb2b0" }} />
+            </IconButton>
+          </Stack>
+        </Grid>
       </Box>
     </>
   );

@@ -23,7 +23,14 @@ export default function IndexCards(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 600, m: 1 }}>
+    <Card
+      sx={{
+        maxWidth: 600,
+        m: 1,
+        backgroundColor: props.data.backgroundColor,
+        borderRadius: "16px",
+      }}
+    >
       <CardHeader
         avatar={
           loading ? (

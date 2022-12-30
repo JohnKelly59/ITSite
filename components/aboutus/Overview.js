@@ -17,24 +17,28 @@ export default function Overview() {
     title: "About Us",
     body: "Ideal Therapy staff creates a family environment to improve your experience as we service you. We take the time to know who you are to create a personalized treatment plan.",
     img: "https://www.idealtherapy.net/wp-content/uploads/2022/02/OT-KAYLA.jpg",
+    backgroundColor: "#9dc53f",
   };
 
   let ourMission = {
     title: "Our Mission",
     body: "Our mission is to provide outstanding client experience by offering individualized evidence-based care available, that promotes everyone to achieve and maintain the highest quality of life. ",
     img: "https://www.idealtherapy.net/wp-content/uploads/2022/03/staff-white.jpg",
+    backgroundColor: "#1bb2b0",
   };
 
   let ourVision = {
     title: "Our Vision",
     body: "We believe in educating our patient family during their rehab journey to further improve long term recovery. We do so by consistently advancing our education & training.",
     img: "https://www.idealtherapy.net/wp-content/uploads/2019/07/about-thumbimg.jpg",
+    backgroundColor: "#9dc53f",
   };
 
   let ourCoreValues = {
     title: "Our Core Values",
     body: "List",
     img: "https://www.idealtherapy.net/wp-content/uploads/2022/03/staff-pink.jpg",
+    backgroundColor: "#1bb2b0",
   };
 
   return (
@@ -58,7 +62,7 @@ export default function Overview() {
         <Zoom in={true} style={{ transitionDelay: "1000ms" }}>
           <Grid xs={12}>
             <Box sx={{ m: 2 }}>
-              <Paper elevation={8}>
+              <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
                 <CardHeader
                   avatar={
                     <Avatar

@@ -12,10 +12,10 @@ export default function PhysicalTherapy() {
   return (
     <Zoom in={true} style={{ transitionDelay: "250ms" }}>
       <Box sx={{ m: 2 }}>
-        <Paper elevation={8}>
+        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
-              <Typography variant="h5">
+              <Typography color="white" variant="h5">
                 <p>
                   Physical Therapists (PTs) and Physical Therapist Assistants
                   (PTAs) can teach patients how to prevent or manage their

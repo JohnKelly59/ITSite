@@ -62,7 +62,10 @@ export default function AppointmentForm(props) {
           alignItems="center"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <Paper sx={{ m: 2, backgroundColor: "#Cfffca" }} elevation={3}>
+          <Paper
+            sx={{ m: 2, backgroundColor: "#9dc53f", borderRadius: "16px" }}
+            elevation={3}
+          >
             <Stack
               sx={{ m: 5 }}
               direction={"column"}
@@ -70,18 +73,7 @@ export default function AppointmentForm(props) {
               textAlign="center"
             >
               <Typography variant={"h5"}>Request an Appointment</Typography>
-              <TextField
-                required
-                id="firstName"
-                label="First Name"
-                variant="outlined"
-              />
-              <TextField
-                required
-                id="lastName"
-                label="Last Name"
-                variant="outlined"
-              />
+              <TextField required id="name" label="Name" variant="outlined" />
               <TextField
                 type="email"
                 required
@@ -97,18 +89,8 @@ export default function AppointmentForm(props) {
                 label="Number"
                 variant="outlined"
               />
-              <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DesktopDatePicker
-                  id="date"
-                  label="Appointment Date"
-                  inputFormat="MM/DD/YYYY"
-                  value={dateValue}
-                  onChange={handleDateChange}
-                  renderInput={(params) => <TextField required {...params} />}
-                />
-              </LocalizationProvider>
               <FormControl required fullWidth>
-                <InputLabel id="appointmentTime">Appointment Time</InputLabel>
+                <InputLabel id="appointmentTime">Service Request</InputLabel>
 
                 <Select
                   labelId="appointmentTime"
@@ -117,8 +99,16 @@ export default function AppointmentForm(props) {
                   label="Appointment Time"
                   onChange={handleTimeChange}
                 >
-                  <MenuItem value={"Morning"}>Morning</MenuItem>
-                  <MenuItem value={"Afternoon"}>Afternoon</MenuItem>
+                  <MenuItem value={"Physical Therapy"}>
+                    Physical Therapy
+                  </MenuItem>
+                  <MenuItem value={"Occupational Therapy"}>
+                    Occputaional Therapy
+                  </MenuItem>
+                  <MenuItem value={"Speech Therapy"}>Speech Therapy</MenuItem>
+                  <MenuItem value={"Aquatic Therapy"}>Aquatic Therapy</MenuItem>
+                  <MenuItem value={"ABA Therapy"}>ABA Therapy</MenuItem>
+                  <MenuItem value={"Massage Therapy"}>Massage Therapy</MenuItem>
                 </Select>
               </FormControl>
               <FormControl required fullWidth>
@@ -166,6 +156,7 @@ export default function AppointmentForm(props) {
                 </Select>
               </FormControl>
               <TextField
+                required
                 multiline
                 rows={5}
                 id="message"

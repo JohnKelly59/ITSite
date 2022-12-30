@@ -151,7 +151,7 @@ export default function Navbar() {
     <>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="static">
+        <AppBar position="static" sx={{ backgroundColor: "#1bb2b0" }}>
           <Toolbar>
             <IconButton
               color="inherit"

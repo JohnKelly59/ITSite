@@ -10,8 +10,15 @@ import Paper from "@mui/material/Paper";
 export default function ServiceCard(props) {
   const router = useRouter();
   return (
-    <Paper elevation={10} sx={{ m: 2 }}>
-      <Card sx={{ backgroundColor: "#Cfffca", maxWidth: 442, minHeight: 200 }}>
+    <Paper elevation={10} sx={{ m: 2, borderRadius: "16px" }}>
+      <Card
+        sx={{
+          borderRadius: "16px",
+          backgroundColor: "#9dc53f",
+          maxWidth: 442,
+          minHeight: 200,
+        }}
+      >
         <CardContent>
           <Typography variant="h4" component="div">
             {props.service.name}
@@ -21,6 +28,7 @@ export default function ServiceCard(props) {
         </CardContent>
         <CardActions>
           <Button
+            sx={{ color: "#000000" }}
             size="large"
             onClick={() => {
               router.push(props.service.queryParam);

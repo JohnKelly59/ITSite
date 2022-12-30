@@ -14,10 +14,10 @@ export default function SpeechTherapy() {
   return (
     <Zoom in={true} style={{ transitionDelay: "250ms" }}>
       <Box sx={{ m: 2 }}>
-        <Paper elevation={8}>
+        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
-              <Typography variant="h6">
+              <Typography color="white" variant="h6">
                 Speech Therapist also referred to as a Speech-language
                 Pathologist can work with a diverse client group, including
                 people with physical and learning disabilities, hearing

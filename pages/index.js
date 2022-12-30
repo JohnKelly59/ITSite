@@ -13,7 +13,7 @@ import Divider from "@mui/material/Divider";
 import CardMedia from "@mui/material/CardMedia";
 import TestimonialCarousel from "../components/home/TestimonialCarousel";
 
-import Carousel from "../components/home/Carousel";
+import ITCarousel from "../components/home/ITCarousel";
 import { maxWidth } from "@mui/system";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -85,7 +85,7 @@ const testimonials = [
 export default function Home() {
   return (
     <>
-      <Carousel images={images} />
+      <ITCarousel images={images} />
       <Grid
         container
         sx={{ mt: 1 }}
@@ -96,10 +96,13 @@ export default function Home() {
       >
         <Box sx={{ maxWidth: 1420 }}>
           <Zoom in={true} style={{ transitionDelay: "500ms" }}>
-            <Paper elevation={10}>
+            <Paper
+              sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}
+              elevation={10}
+            >
               <Stack direction={"row"}>
                 <Grid container xs={6} md={6}>
-                  <Typography variant="h5">
+                  <Typography color="white" variant="h5">
                     <p>
                       Ideal Therapy, LLC has been offering high quality therapy
                       services since 2008. We provide Occupational, Speech,

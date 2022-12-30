@@ -35,7 +35,10 @@ export default function ContactForm(props) {
           alignItems="center"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <Paper sx={{ m: 2, backgroundColor: "#Cfffca" }} elevation={3}>
+          <Paper
+            sx={{ m: 2, backgroundColor: "#9dc53f", borderRadius: "16px" }}
+            elevation={3}
+          >
             <Stack
               sx={{ m: 5 }}
               direction={"column"}
@@ -60,6 +63,7 @@ export default function ContactForm(props) {
                 variant="outlined"
               />
               <TextField
+                required
                 multiline
                 rows={5}
                 id="message"
