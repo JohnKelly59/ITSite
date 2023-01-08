@@ -7,20 +7,22 @@ import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
+import mtphoto from "../../public/images/mtphoto.jpg"
+import atphoto from "../../public/images/atphoto.jpg"
 
 export default function OtherServices() {
   return (
     <>
       <Zoom in={true} style={{ transitionDelay: "250ms" }}>
         <Box sx={{ m: 2 }}>
-          <Paper elevation={8}>
+          <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
             <Grid container spacing={2}>
               <Grid xs={6} md={6}>
-                <Typography variant="h5">
-                  <strong>Massage Therapy</strong>
+                <Typography color="white" variant="h5">
+                  Massage Therapy
                 </Typography>
                 <br />
-                <Typography variant="subtitle1">
+                <Typography color="white" variant="subtitle1">
                   <p>
                     Massage Therapy: Licensed Massage Therapist (LMT): Massage
                     Therapy is an accepted component of physical rehabilitation
@@ -46,7 +48,7 @@ export default function OtherServices() {
                 <CardMedia
                   component="img"
                   height="350"
-                  image="https://www.idealtherapy.net/wp-content/uploads/2022/02/ideal-massageTherapy.jpg"
+                  image={mtphoto.src}
                   alt="Massage Therapy Image"
                 />
               </Grid>
@@ -56,14 +58,14 @@ export default function OtherServices() {
       </Zoom>
       <Zoom in={true} style={{ transitionDelay: "500ms" }}>
         <Box sx={{ m: 2 }}>
-          <Paper elevation={8}>
+          <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
             <Grid container spacing={2}>
               <Grid xs={6} md={6}>
-                <Typography variant="h5">
-                  <strong>Aquatic Therapy</strong>
+                <Typography color="white" variant="h5">
+                  Aquatic Therapy
                 </Typography>
                 <br />
-                <Typography variant="subtitle1">
+                <Typography color="white" variant="subtitle1">
                   <p>
                     Water’s natural properties create an Ideal therapeutic
                     environment: Warm water provides a relaxing and soothing
@@ -84,7 +86,7 @@ export default function OtherServices() {
                 <CardMedia
                   component="img"
                   height="350"
-                  image="https://www.idealtherapy.net/wp-content/uploads/2019/08/aquatic-therapy.jpg"
+                  image={atphoto.src}
                   alt="Aquatic Therapy Image"
                 />
               </Grid>

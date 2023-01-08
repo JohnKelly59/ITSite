@@ -7,8 +7,10 @@ import OccupationalTherapy from "../components/services/OccupationalTherapy";
 import SpeechTherapy from "../components/services/SpeechTherapy";
 import ABATherapy from "../components/services/ABATherapy";
 import OtherServices from "../components/services/OtherServices";
+import { useRouter } from 'next/router'
 
 export default function Services() {
+  const router = useRouter()
   const tabs = [
     "Physical Therapy",
     "Occupational Therapy",
@@ -16,7 +18,7 @@ export default function Services() {
     "ABA Therapy",
     "Other Services",
   ];
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(router.query.service ? tabs.indexOf(router.query.service) : 0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -42,6 +44,7 @@ export default function Services() {
       <CenteredTabs
         props={{ tabs: tabs, handleChange: handleChange, value: value }}
       />
+      {console.log(router)}
       {renderTab(tabs[value])}
     </>
   );

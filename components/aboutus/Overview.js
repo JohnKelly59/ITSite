@@ -11,33 +11,38 @@ import ListItem from "@mui/material/ListItem";
 import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
+import logo from "../../public/images/ideal_therapy_logo.jpg"
+import ourcorevalues from "../../public/images/ourcorevalues.jpg"
+import ourmission from "../../public/images/ourmission.jpg"
+import ourvision from "../../public/images/ourvision.jpg"
+import aboutuspic from "../../public/images/aboutuspic.jpg"
 
 export default function Overview() {
   let aboutUs = {
     title: "About Us",
     body: "Ideal Therapy staff creates a family environment to improve your experience as we service you. We take the time to know who you are to create a personalized treatment plan.",
-    img: "https://www.idealtherapy.net/wp-content/uploads/2022/02/OT-KAYLA.jpg",
+    img: aboutuspic,
     backgroundColor: "#9dc53f",
   };
 
   let ourMission = {
     title: "Our Mission",
     body: "Our mission is to provide outstanding client experience by offering individualized evidence-based care available, that promotes everyone to achieve and maintain the highest quality of life. ",
-    img: "https://www.idealtherapy.net/wp-content/uploads/2022/03/staff-white.jpg",
+    img: ourmission,
     backgroundColor: "#1bb2b0",
   };
 
   let ourVision = {
     title: "Our Vision",
     body: "We believe in educating our patient family during their rehab journey to further improve long term recovery. We do so by consistently advancing our education & training.",
-    img: "https://www.idealtherapy.net/wp-content/uploads/2019/07/about-thumbimg.jpg",
+    img: ourvision,
     backgroundColor: "#9dc53f",
   };
 
   let ourCoreValues = {
     title: "Our Core Values",
     body: "List",
-    img: "https://www.idealtherapy.net/wp-content/uploads/2022/03/staff-pink.jpg",
+    img: ourcorevalues,
     backgroundColor: "#1bb2b0",
   };
 
@@ -67,25 +72,25 @@ export default function Overview() {
                   avatar={
                     <Avatar
                       alt="Ideal Therapy"
-                      src="https://www.idealtherapy.net/wp-content/uploads/2019/07/logo.png"
+                      src={logo.src}
                     />
                   }
-                  title={<strong>{ourCoreValues.title}</strong>}
+                  title={<Typography color="white">{ourCoreValues.title}</Typography>}
                 />
                 <Grid container spacing={2}>
                   <Grid xs={6} md={6}>
                     <CardMedia
                       component="img"
                       height="320"
-                      image={ourCoreValues.img}
+                      image={ourCoreValues.img.src}
                       alt="Physical Therapy Image"
                     />
                   </Grid>
                   <Grid xs={6} md={6}>
-                    <Typography variant="h6">
+                    <Typography color="white" variant="h6">
                       Ideal Therapy aspires to uphold these core values to:{" "}
                     </Typography>
-                    <Typography variant="body6">
+                    <Typography color="white" variant="body6">
                       <List
                         sx={{
                           listStyleType: "disc",

@@ -10,6 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Skeleton from "@mui/material/Skeleton";
 import ITDialog from "./ITDialog";
+import logo from "../../public/images/ideal_therapy_logo.jpg"
 
 export default function IndexCards(props) {
   const { loading = false } = props;
@@ -32,6 +33,7 @@ export default function IndexCards(props) {
       }}
     >
       <CardHeader
+       
         avatar={
           loading ? (
             <Skeleton
@@ -43,14 +45,14 @@ export default function IndexCards(props) {
           ) : (
             <Avatar
               alt="Ideal Therapy"
-              src="https://www.idealtherapy.net/wp-content/uploads/2019/07/logo.png"
+              src={logo.src}
             />
           )
         }
         action={
           loading ? null : (
             <IconButton aria-label="dialog" onClick={handleClickOpen}>
-              <MoreVertIcon />
+              <MoreVertIcon sx={{color : props.data.backgroundColor === "#1bb2b0" && "white" }}/>
             </IconButton>
           )
         }
@@ -63,7 +65,8 @@ export default function IndexCards(props) {
               style={{ marginBottom: 6 }}
             />
           ) : (
-            <strong>{props.data.title}</strong>
+           
+           <Typography color={props.data.backgroundColor === "#1bb2b0" && "white" }>{props.data.title}</Typography>
           )
         }
       />
@@ -73,7 +76,7 @@ export default function IndexCards(props) {
         <CardMedia
           component="img"
           height="290"
-          image={props.data.img}
+          image={props.data.img.src}
           alt="Ideal Therapy Image"
         />
       )}
@@ -89,7 +92,7 @@ export default function IndexCards(props) {
             <Skeleton animation="wave" height={10} width="80%" />
           </React.Fragment>
         ) : (
-          <Typography variant="body2" color="text.secondary" component="p">
+          <Typography variant="body2" color={props.data.backgroundColor === "#1bb2b0" ? "white" : "text.secondary"} component="p">
             {props.data.body}
           </Typography>
         )}

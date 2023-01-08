@@ -9,12 +9,13 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import stphoto from "../../public/images/ST -DENISE.jpg"
 
 export default function SpeechTherapy() {
   return (
     <Zoom in={true} style={{ transitionDelay: "250ms" }}>
       <Box sx={{ m: 2 }}>
-        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
+        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
               <Typography color="white" variant="h6">
@@ -33,6 +34,7 @@ export default function SpeechTherapy() {
                     },
                   }}
                   dense={true}
+                  
                 >
                   <ListItem>Written language skills</ListItem>
                   <ListItem>Receptive language </ListItem>
@@ -57,7 +59,7 @@ export default function SpeechTherapy() {
               <CardMedia
                 component="img"
                 height="500"
-                image="https://www.idealtherapy.net/wp-content/uploads/2022/02/ST-DENISE-300x262.jpg"
+                image={stphoto.src}
                 alt="Speech Therapy Image"
               />
             </Grid>

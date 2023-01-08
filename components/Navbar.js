@@ -27,6 +27,7 @@ import Avatar from "@mui/material/Avatar";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 import HomeIcon from "@mui/icons-material/Home";
 import Footer from "../components/Footer";
+import logo from "../public/images/ideal_therapy_logo.jpg"
 
 const drawerWidth = 240;
 
@@ -163,7 +164,7 @@ export default function Navbar() {
               <MenuIcon />
             </IconButton>
             <Typography
-              variant="h6"
+              variant="h5"
               noWrap
               component="div"
               sx={{ flexGrow: 1 }}
@@ -183,7 +184,7 @@ export default function Navbar() {
                   aria-controls="menu-appbar"
                   sx={{ width: 64, height: 64, mr: 0 }}
                   alt="Ideal Therapy"
-                  src="https://www.idealtherapy.net/wp-content/uploads/2019/07/logo.png"
+                  src={logo.src}
                 />
               </IconButton>
               <Menu
@@ -227,10 +228,10 @@ export default function Navbar() {
       >
         <DrawerHeader>
           <Avatar
-            sx={{ width: 64, height: 64 }}
+            sx={{ width: 50, height: 50 }}
             alt="Ideal Therapy"
-            src="https://www.idealtherapy.net/wp-content/uploads/2019/07/logo.png"
-          />
+            src={logo.src}
+          /><p>&nbsp;</p>
           <Typography variant="h6" noWrap component="div">
             Ideal Therapy
           </Typography>

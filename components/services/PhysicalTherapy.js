@@ -1,5 +1,4 @@
 import * as React from "react";
-import IndexCards from "../aboutus/IndexCards";
 import Grid from "@mui/material/Unstable_Grid2";
 import Zoom from "@mui/material/Zoom";
 import Typography from "@mui/material/Typography";
@@ -7,12 +6,13 @@ import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
+import ptphoto from "../../public/images/kob.jpg"
 
 export default function PhysicalTherapy() {
   return (
     <Zoom in={true} style={{ transitionDelay: "250ms" }}>
       <Box sx={{ m: 2 }}>
-        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
+        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
               <Typography color="white" variant="h5">
@@ -46,7 +46,7 @@ export default function PhysicalTherapy() {
               <CardMedia
                 component="img"
                 height="500"
-                image="https://www.idealtherapy.net/wp-content/uploads/2022/02/ideal-physicalTherapy.jpg"
+                image={ptphoto.src}
                 alt="Physical Therapy Image"
               />
             </Grid>

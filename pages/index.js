@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import CardMedia from "@mui/material/CardMedia";
 import TestimonialCarousel from "../components/home/TestimonialCarousel";
+import bog from "../public/images/bog2021.jpg"
 
 import ITCarousel from "../components/home/ITCarousel";
 import { maxWidth } from "@mui/system";
@@ -101,6 +102,17 @@ export default function Home() {
               elevation={10}
             >
               <Stack direction={"row"}>
+              <Grid xs={3} md={3}>
+                  <CardMedia
+                    component="img"
+                    justifyContent="right"
+                    alignItems="right"
+                    height="600"
+                    sx={{objectFit: "contain" }}
+                    image={bog.src}
+                    alt="Best of Georgia Image"
+                  />
+                </Grid>
                 <Grid container xs={6} md={6}>
                   <Typography color="white" variant="h5">
                     <p>
@@ -131,11 +143,14 @@ export default function Home() {
                   <Divider orientation="vertical" flexItem />
                 </Grid>
 
-                <Grid xs={6} md={6}>
+                <Grid xs={3} md={3}>
                   <CardMedia
                     component="img"
-                    height="550"
-                    image="https://www.idealtherapy.net/wp-content/uploads/2022/02/BOGA-2021.jpg"
+                    justifyContent="right"
+                    alignItems="right"
+                    height="600"
+                    sx={{objectFit: "contain" }}
+                    image={bog.src}
                     alt="Best of Georgia Image"
                   />
                 </Grid>

@@ -9,19 +9,20 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import abaphoto from "../../public/images/abaphoto.jpg"
 
 export default function ABATherapy() {
   return (
     <Zoom in={true} style={{ transitionDelay: "250ms" }}>
       <Box sx={{ m: 2 }}>
-        <Paper elevation={8}>
+        <Paper elevation={8}  sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
-              <Typography variant="h5">
+              <Typography color="white" variant="h5">
                 <p>WHAT IS ABA THERAPY?</p>
               </Typography>
 
-              <Typography variant="body6">
+              <Typography color="white" variant="body6">
                 ABA (Applied Behavior Analysis) therapy is an evidence-based
                 therapy that focuses on improving, a wide variety of specific
                 behaviors, such as communication, social skills, self-care,
@@ -34,8 +35,8 @@ export default function ABATherapy() {
                 that behavior. Over time, this encourages positive behavior
                 change.
               </Typography>
-              <Typography variant="h5"> How does ABA therapy work? </Typography>
-              <Typography variant="body6">
+              <Typography color="white" variant="h5"> How does ABA therapy work? </Typography>
+              <Typography color="white" variant="body6">
                 <List
                   sx={{
                     listStyleType: "disc",
@@ -62,10 +63,10 @@ export default function ABATherapy() {
                 </List>
               </Typography>
 
-              <Typography variant="h5">
+              <Typography color="white" variant="h5">
                 The overall goal is to improve the client’s ability to:
               </Typography>
-              <Typography variant="body6">
+              <Typography color="white" variant="body6">
                 <List
                   sx={{
                     listStyleType: "disc",
@@ -99,7 +100,7 @@ export default function ABATherapy() {
               <CardMedia
                 component="img"
                 height="500"
-                image="https://www.idealtherapy.net/wp-content/uploads/2022/02/ideal-speechTherapy.jpg"
+                image={abaphoto.src}
                 alt="ABA Therapy"
               />
             </Grid>

@@ -7,12 +7,13 @@ import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
+import otphoto from "../../public/images/OT- KAYLA.jpg"
 
 export default function OccupationalTherapy() {
   return (
     <Zoom in={true} style={{ transitionDelay: "250ms" }}>
       <Box sx={{ m: 2 }}>
-        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
+        <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
               <Typography color="white" variant="h5">
@@ -49,7 +50,7 @@ export default function OccupationalTherapy() {
               <CardMedia
                 component="img"
                 height="500"
-                image="https://www.idealtherapy.net/wp-content/uploads/2022/02/OT-RASHAD.jpg"
+                image={otphoto.src}
                 alt="Occupational Therapy Image"
               />
             </Grid>

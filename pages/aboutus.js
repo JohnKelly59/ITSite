@@ -7,7 +7,8 @@ import OurTeam from "../components/aboutus/OurTeam";
 import CenteredTabs from "../components/Tabs";
 
 export default function AboutUs() {
-  const tabs = ["Overview", "Our Team"];
+  const tabs = ["Overview"];
+  //const tabs = ["Overview", "Our Team"];
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
