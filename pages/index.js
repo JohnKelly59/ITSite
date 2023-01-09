@@ -13,6 +13,7 @@ import Divider from "@mui/material/Divider";
 import CardMedia from "@mui/material/CardMedia";
 import TestimonialCarousel from "../components/home/TestimonialCarousel";
 import bog from "../public/images/bog2021.jpg"
+import bog2 from "../public/images/bog2022.jpg"
 
 import ITCarousel from "../components/home/ITCarousel";
 import { maxWidth } from "@mui/system";
@@ -150,7 +151,7 @@ export default function Home() {
                     alignItems="right"
                     height="600"
                     sx={{objectFit: "contain" }}
-                    image={bog.src}
+                    image={bog2.src}
                     alt="Best of Georgia Image"
                   />
                 </Grid>

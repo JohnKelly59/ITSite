@@ -47,6 +47,7 @@ export default function PhysicalTherapy() {
                 component="img"
                 height="500"
                 image={ptphoto.src}
+                sx={{borderRadius: "16px", paddingRight: "10px"}}
                 alt="Physical Therapy Image"
               />
             </Grid>

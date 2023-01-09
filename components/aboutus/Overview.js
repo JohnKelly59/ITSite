@@ -67,7 +67,7 @@ export default function Overview() {
         <Zoom in={true} style={{ transitionDelay: "1000ms" }}>
           <Grid xs={12}>
             <Box sx={{ m: 2 }}>
-              <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0" }}>
+              <Paper elevation={8} sx={{ borderRadius: "16px", backgroundColor: "#1bb2b0" }}>
                 <CardHeader
                   avatar={
                     <Avatar
@@ -82,6 +82,7 @@ export default function Overview() {
                     <CardMedia
                       component="img"
                       height="320"
+                      sx={{borderRadius: "16px", paddingRight: "10px"}}
                       image={ourCoreValues.img.src}
                       alt="Physical Therapy Image"
                     />

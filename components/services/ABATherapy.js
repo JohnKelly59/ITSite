@@ -99,8 +99,9 @@ export default function ABATherapy() {
             <Grid xs={6} md={6}>
               <CardMedia
                 component="img"
-                height="500"
+                height="700"
                 image={abaphoto.src}
+                sx={{borderRadius: "16px", paddingRight: "10px"}}
                 alt="ABA Therapy"
               />
             </Grid>

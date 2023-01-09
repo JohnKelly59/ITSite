@@ -48,6 +48,7 @@ export default function OccupationalTherapy() {
 
             <Grid xs={6} md={6}>
               <CardMedia
+                sx={{borderRadius: "16px", paddingRight: "10px"}}
                 component="img"
                 height="500"
                 image={otphoto.src}

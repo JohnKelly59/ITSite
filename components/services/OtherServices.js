@@ -48,6 +48,7 @@ export default function OtherServices() {
                 <CardMedia
                   component="img"
                   height="350"
+                  sx={{borderRadius: "16px", paddingRight: "10px"}}
                   image={mtphoto.src}
                   alt="Massage Therapy Image"
                 />
@@ -58,7 +59,7 @@ export default function OtherServices() {
       </Zoom>
       <Zoom in={true} style={{ transitionDelay: "500ms" }}>
         <Box sx={{ m: 2 }}>
-          <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px" }}>
+          <Paper elevation={8} sx={{ backgroundColor: "#1bb2b0", borderRadius: "16px"}}>
             <Grid container spacing={2}>
               <Grid xs={6} md={6}>
                 <Typography color="white" variant="h5">
@@ -87,6 +88,7 @@ export default function OtherServices() {
                   component="img"
                   height="350"
                   image={atphoto.src}
+                  sx={{borderRadius: "16px", paddingRight: "10px"}}
                   alt="Aquatic Therapy Image"
                 />
               </Grid>

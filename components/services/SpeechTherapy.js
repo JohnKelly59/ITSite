@@ -58,8 +58,9 @@ export default function SpeechTherapy() {
             <Grid xs={6} md={6}>
               <CardMedia
                 component="img"
-                height="500"
+                height="650"
                 image={stphoto.src}
+                sx={{borderRadius: "16px", paddingRight: "10px"}}
                 alt="Speech Therapy Image"
               />
             </Grid>
