@@ -12,38 +12,33 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import CardMedia from "@mui/material/CardMedia";
 import TestimonialCarousel from "../components/home/TestimonialCarousel";
-import bog from "../public/images/bog2021.jpg"
-import bog2 from "../public/images/bog2022.jpg"
-
+import bog from "../public/images/bog2021.jpg";
+import bog2 from "../public/images/bog2022.jpg";
+import cp1 from "../public/images/aboutuspic.jpg";
+import cp2 from "../public/images/bannerpic.jpg";
+import cp3 from "../public/images/bog2022banner.jpg";
+import cp4 from "../public/images/kidsSection.jpg";
+import cp5 from "../public/images/mtphoto.jpg";
 import ITCarousel from "../components/home/ITCarousel";
 import { maxWidth } from "@mui/system";
 
 const inter = Inter({ subsets: ["latin"] });
 const images = [
   {
-    label: "Physical Therapy",
-    imgPath:
-      "https://www.idealtherapy.net/wp-content/uploads/2022/03/physical-therapy1a.jpg",
+    label: "team",
+    imgPath: cp1,
   },
   {
-    label: "Aquatic Therapy",
-    imgPath:
-      "https://www.idealtherapy.net/wp-content/uploads/2019/12/aquatic-therapy1.jpg",
+    label: "pediatric",
+    imgPath: cp2,
   },
   {
-    label: "Occupational Therapy",
-    imgPath:
-      "https://www.idealtherapy.net/wp-content/uploads/2022/03/occupational-therapy-1-1.jpg",
+    label: "bog2022",
+    imgPath: cp3,
   },
   {
-    label: "Speech Therapy",
-    imgPath:
-      "https://www.idealtherapy.net/wp-content/uploads/2022/03/speech-therapy1.jpg",
-  },
-  {
-    label: "Massage Therapy",
-    imgPath:
-      "https://www.idealtherapy.net/wp-content/uploads/2022/03/massage-therapy.jpg",
+    label: "ped center",
+    imgPath: cp4,
   },
 ];
 
@@ -103,13 +98,13 @@ export default function Home() {
               elevation={10}
             >
               <Stack direction={"row"}>
-              <Grid xs={3} md={3}>
+                <Grid xs={3} md={3}>
                   <CardMedia
                     component="img"
                     justifyContent="right"
                     alignItems="right"
                     height="600"
-                    sx={{objectFit: "contain" }}
+                    sx={{ objectFit: "contain" }}
                     image={bog.src}
                     alt="Best of Georgia Image"
                   />
@@ -150,7 +145,7 @@ export default function Home() {
                     justifyContent="right"
                     alignItems="right"
                     height="600"
-                    sx={{objectFit: "contain" }}
+                    sx={{ objectFit: "contain" }}
                     image={bog2.src}
                     alt="Best of Georgia Image"
                   />

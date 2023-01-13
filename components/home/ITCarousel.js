@@ -33,7 +33,7 @@ function ITCarousel(props) {
       <Zoom in={true} style={{ transitionDelay: "250ms" }}>
         <Box>
           <Paper
-            sx={{ m: 2, backgroundColor: "#9dc53f", borderRadius: "16px" }}
+            sx={{ m: 4, backgroundColor: "#9dc53f", borderRadius: "16px" }}
             elevation={10}
           >
             <Carousel>
@@ -49,7 +49,7 @@ function ITCarousel(props) {
                     overflow: "hidden",
                     width: "100%",
                   }}
-                  src={step.imgPath}
+                  src={step.imgPath.src}
                   alt={step.label}
                 />
               ))}

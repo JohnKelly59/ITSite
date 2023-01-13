@@ -44,7 +44,6 @@ export default function Services() {
       <CenteredTabs
         props={{ tabs: tabs, handleChange: handleChange, value: value }}
       />
-      {console.log(router)}
       {renderTab(tabs[value])}
     </>
   );
