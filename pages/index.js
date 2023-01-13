@@ -17,7 +17,7 @@ import bog2 from "../public/images/bog2022.jpg";
 import cp1 from "../public/images/aboutuspic.jpg";
 import cp2 from "../public/images/bannerpic.jpg";
 import cp3 from "../public/images/bog2022banner.jpg";
-import cp4 from "../public/images/kidssection.jpg";
+import cp4 from "../public/images/kids-section.jpg";
 import cp5 from "../public/images/mtphoto.jpg";
 import ITCarousel from "../components/home/ITCarousel";
 import { maxWidth } from "@mui/system";
