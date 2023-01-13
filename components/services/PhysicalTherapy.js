@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import ptphoto from "../../public/images/kob.jpg";
+//import ptphoto from "../../public/images/kob.jpg";
 
 export default function PhysicalTherapy() {
   return (
@@ -50,7 +50,7 @@ export default function PhysicalTherapy() {
                 sx={{ borderRadius: "16px", paddingRight: "10px" }}
                 component="img"
                 height="500"
-                image={ptphoto.src}
+                image={"/kob.jpg"}
                 alt="Physical Therapy Image"
               />
             </Grid>
