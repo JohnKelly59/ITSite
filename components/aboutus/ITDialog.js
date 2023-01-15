@@ -67,7 +67,7 @@ export default function ITDialog(props) {
         <DialogContent dividers>
           <Typography gutterBottom>{props.data.body}</Typography>
           <Box display="flex" justifyContent="center" alignItems="center">
-            <img centered src={props.data.img} />
+            <img centered src={props.data.img.src} />
           </Box>
         </DialogContent>
         <DialogActions>
