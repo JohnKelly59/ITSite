@@ -25,12 +25,12 @@ import { maxWidth } from "@mui/system";
 const inter = Inter({ subsets: ["latin"] });
 const images = [
   {
-    label: "team",
-    imgPath: cp1,
-  },
-  {
     label: "pediatric",
     imgPath: cp2,
+  },
+  {
+    label: "team",
+    imgPath: cp1,
   },
   {
     label: "bog2022",
