@@ -67,7 +67,7 @@ const serviceCards = [
     name: "ABA Therapy",
     description:
       "An evidence-based therapy that focuses on improving a wide variety of specific behaviors.",
-    queryParam: "/services?service=Other%20Services",
+    queryParam: "/services?service=ABA%20Therapy",
   },
 ];
 
