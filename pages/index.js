@@ -64,8 +64,9 @@ const serviceCards = [
     queryParam: "/services?service=Other%20Services",
   },
   {
-    name: "Massage Therapy",
-    description: "Relieve the stress and tension of everyday living.",
+    name: "ABA Therapy",
+    description:
+      "An evidence-based therapy that focuses on improving a wide variety of specific behaviors.",
     queryParam: "/services?service=Other%20Services",
   },
 ];
