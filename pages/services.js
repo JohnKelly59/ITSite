@@ -7,18 +7,22 @@ import OccupationalTherapy from "../components/services/OccupationalTherapy";
 import SpeechTherapy from "../components/services/SpeechTherapy";
 import ABATherapy from "../components/services/ABATherapy";
 import OtherServices from "../components/services/OtherServices";
-import { useRouter } from 'next/router'
+import PelvicFloorTherapy from "../components/services/PelvicFloorTherapy";
+import { useRouter } from "next/router";
 
 export default function Services() {
-  const router = useRouter()
+  const router = useRouter();
   const tabs = [
     "Physical Therapy",
     "Occupational Therapy",
     "Speech Therapy",
     "ABA Therapy",
+    "Pelvic Floor Therapy",
     "Other Services",
   ];
-  const [value, setValue] = React.useState(router.query.service ? tabs.indexOf(router.query.service) : 0);
+  const [value, setValue] = React.useState(
+    router.query.service ? tabs.indexOf(router.query.service) : 0
+  );
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -34,6 +38,8 @@ export default function Services() {
         return <SpeechTherapy />;
       case "ABA Therapy":
         return <ABATherapy />;
+      case "Pelvic Floor Therapy":
+        return <PelvicFloorTherapy />;
       case "Other Services":
         return <OtherServices />;
     }

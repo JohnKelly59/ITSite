@@ -69,6 +69,12 @@ const serviceCards = [
       "A therapy that focuses on improving a wide variety of specific behaviors.",
     queryParam: "/services?service=ABA%20Therapy",
   },
+  {
+    name: "Pelvic Floor Therapy",
+    description:
+      "Assess Pelvic floor musculatur & other involved musculoskeletal regions.",
+    queryParam: "/services?service=Pelvic%20Floor%20Therapy",
+  },
 ];
 
 const testimonials = [
@@ -178,6 +184,7 @@ export default function Home() {
           >
             <ServiceCard service={serviceCards[3]} />
             <ServiceCard service={serviceCards[4]} />
+            <ServiceCard service={serviceCards[5]} />
           </Grid>
         </Zoom>
       </Grid>
